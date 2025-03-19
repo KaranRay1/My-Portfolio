@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Karan Ray Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Karan Ray</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#my_work-section" class="nav-link"><span>My Work</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image: url('pic2.jpg');">
+
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hi!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Karan Ray</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Developer  ',
+						'Tech Enthusiast  ',
+						'Creative Thinker   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>AI & ML Engineer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <!-- <p>
+							<a href="https://github.com/PigeonT4" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="pic5.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Karan Ray</span></p>
+										<p><span class="title-s">College: </span> <span>Graphic Era Hill University</span></p>
+										<p><span class="title-s">Domain: </span> <span>Computer Science and Engineering</span></p>
+										<p><span class="title-s">Address: </span> <span>Clement Town, Dehradun, Uttarakhand</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Full Stack</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>"Hi, I'm Karan Ray, a passionate developer and AI enthusiast currently pursuing a B.Tech in Artificial Intelligence and Machine Learning at Graphic Era Hill University. 
+									With a strong foundation in programming and web development, I love creating innovative solutions that blend technology and creativity. 
+									My journey in AI, full-stack development, and problem-solving drives me to build impactful projects. 
+									I'm always eager to learn, explore new technologies, and collaborate on exciting ideas."</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Sepecilization:</span> <span>Artificial Intelligence &amp; Machine Learning</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, Oracle Database, Excel, Java, Image Processing, C/C++ &amp; Adobe Photoshop</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<!-- <p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; My Work completed</span>
+								</p> -->
+								<p><a href="https://www.linkedin.com/in/karan-ray/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>"Proactive and results-driven undergraduate at Graphic Era University with expertise in programming, web development, artificial intelligence, and graphic design. 
+				Passionate about leveraging technology to build efficient and scalable solutions, with strong analytical and creative problem-solving abilities."</p>
+          </div>
+        </div>
+
+		
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2026</span>
+    					<h2>Bachelor of Techonology</h2>
+    					<span class="position">Graphic Era Hill University</span>
+    					<p class="mt-4">CGPA: 7.52 </p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2021</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Kendriya Vidyalaya Sangathan</span>
+    					<p class="mt-4">Percentage: 86%</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5" onclick="downloadResume()">Download Resume</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+	<script>
+		function downloadResume() {
+			const link = document.createElement("a");
+			link.href = "https://drive.google.com/file/d/1nE13DHTQGpSg0q_aOvdJ2VAc0XDgn-Ci/view?usp=drive_link";
+			link.download = "Karan_Resume.pdf"; 
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+		}
+	</script>
+
+	<!-- <script>
+		function downloadResume() {
+			// window.open("Karan_Resume1.pdf", "_blank");
+			const link = document.createElement("a");
+			link.href = "Karan_Resume1.pdf";
+			link.download = "Karan_Resume1.pdf";
+			link.click();
+		}
+	</script> -->
+   
+
+    <section class="ftco-section" id="my_work-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">My Work</h1>
+            <h2 class="mb-4">My Work</h2>
+            <p>The key takeaways and lessons learned from the lectures</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Class Learnings</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Resume Writing</span>
+		
+						
+						<p class="mt-4">This lecture provided insights into crafting a professional resume using the IIT Bombay format with a well-structured approach. Key takeaways include:
+							<ul>
+								<li><span class="position">Contact Information</span></li>
+								<p>Essential personal details for communication (Name, Email, Phone Number, LinkedIn, GitHub).</p>
+
+								<li><span class="position">Career Objective</span></li>
+								<p>A short, specific statement outlining career goals.</p>
+
+								<li><span class="position">Education</span></li>
+								<p>List qualifications in reverse chronological order (most recent first).</p>
+								<p>Include completion dates, institution names, and grades/marks.</p>
+
+								<li><span class="position">Experience Summary</span></li>
+								<p>Highlight internships, research papers, projects, and certifications.</p>
+								<p>Include corresponding dates to showcase experience.</p>
+
+								<li><span class="position">Skills Section</span></li>
+								<p>Differentiate between technical and interpersonal skills.</p>
+								<p>Mention relevant programming languages, frameworks, and tools.</p>
+
+								<li><span class="position">Activities & Honors</span></li>
+								<p>Mention extracurricular achievements and recognitions.</p>
+								
+								<li><span class="position">Linguistic Skills</span></li>
+								<p>Specify language proficiency levels (e.g., Fluent in English & Hindi).</p>
+
+								<li><span class="position">Declaration</span></li>
+								<p>A formal statement confirming the accuracy of provided information.</p>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Introduction Techniques</span>
+						<br>
+						<span class="position">Sixer Theory</span>
+						<p class="mt-4">The Sixer Theory consists of six essential points, with the first three focusing on the basic introduction and the next three enhancing employability prospects. 
+							<ul>
+								<li>Name – Start with your full name, spoken with confidence. A strong introduction begins with a clear and assertive mention of who you are.</li>
+								<li>Place – Mention your hometown or current residence. This gives the listener an idea of your background.
+								</li>
+								<li>Education – List your academic qualifications in reverse chronological order (most recent first), 
+									i.e., Graduation → 12th Grade → 10th Grade. This highlights your most relevant and recent education first.
+
+								</li>
+								<li>Recently Accomplished Work – This includes internships, research papers, projects, training/certifications, and workshops. 
+									These experiences demonstrate your practical knowledge and willingness to upskill.</li>
+								<li>Career Objective – A well-defined, short, and specific career goal that reflects your aspirations and professional direction.</li>
+								<li>Hobby – Mention a personal interest that reflects your personality and skills, such as photography, blogging, or traveling. 
+									Hobbies can serve as conversation starters and display additional competencies.</li>
+							</ul>
+						</p>
+						<br>
+						<span class="position" color="white">Five Ring Theory</span>
+						<p class="mt-4">The Five Ring Theory takes a slightly different approach, emphasizing interpersonal elements along with educational and professional details. 
+							<ul>
+								<li>Name – Begin with your full name, ensuring clarity and confidence in delivery.</li>
+								<li>Place – Mention your city or hometown to provide background context.
+								</li>
+								<li>Education – Briefly outline your educational background in a structured manner.
+
+								</li>
+								<li>About Family – A unique addition in this approach, where you provide a brief mention of your family. 
+									This helps in showcasing interpersonal skills like adaptability, teamwork, and values learned from family upbringing.</li>
+								<li>Goal – Define both short-term (mission) and long-term (vision) career objectives.
+
+									Short-term goals should align with your immediate career aspirations.
+									
+									Long-term goals should reflect your ultimate professional vision.</li>
+								
+							</ul>
+						</p>	
+
+					</div>
+
+				</div>
+			</div> 
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Movie Review</span>
+						<h2>The Pursuit of Happyness</h2>
+						
+						<p class="mt-4">This lecture provided insights into crafting a professional resume using the IIT Bombay format with a well-structured approach. Key takeaways include:
+							<ul>
+								<br>
+								<span class="position"> Favorite Dialogue</span>
+								<p>"You got a dream, you gotta protect it. 
+									If people can't do something themselves, they're gonna tell you that you can't do it."</p>
+
+									<p> Why it's powerful: This dialogue reveals a harsh truth about the world: people project their own limitations onto others. 
+										It reminds us to stay determined and push forward regardless of negativity.</p>
+
+								<br>
+								<span class="position">Review of the Movie:</span>
+								<p>The Pursuit of Happyness is more than just a movie; it's an inspiring story of hope, struggle, and victory. 
+									It teaches us that success doesn't come easy, but with determination, patience, and hard work, anything is possible. 
+									It's a must-watch for anyone looking for motivation, especially for those facing obstacles in their journey.</p>
+									<br>
+								<span class="position">Learning Taken from the Movie:</span>
+								<li>Never Let Anyone Define Your Limits </li> 
+								<p>People often impose their own fears and failures on others. 
+									If you have a dream, don't let negativity stop you from pursuing it.</p>
+								<li>Hard Work Pays Off</li>
+								<p>Success doesn't come overnight. 
+									Consistent hard work and dedication are essential to achieving your goals.</p>
+								<li>Persistence is Key to Success</li>
+								<p>o matter how many failures or rejections, pushing forward is essential.</p>
+
+								<li>Believe in Yourself</li>
+								<p>Believing in yourself helps you stay motivated and focused.
+									Self-confidence and determination are crucial to overcoming obstacles.
+								</p>
+								<li>Happiness is a Journey, Not a Destination</li>
+								<p>Life is about the pursuit of dreams, not just reaching the goal.</p>
+								
+								<li>Stay Positive Even in Difficult Times</li>
+								<p>Staying positive in difficult times helps you maintain your motivation and focus. 
+                                    It also fosters a sense of resilience and growth.</p>
+
+
+								
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Learning Taken </span>
+						<br>
+						<span class="position"> Lecture 1</span>
+						<p class="mt-4">Sir wants us to work hard and stay disciplined because our parents have put a lot of effort and money into our education. 
+							He is strict because he wants us to do our best and be ready for the challenges of life. 
+							He also teaches us to love ourselves, which helps us aim for success. Even though he pushes us, it's because he wants us to become strong and capable for the future. 
+							His lessons remind us to be thankful for our parents and take responsibility for our own growth.
+							
+						</p>
+						<br>
+						<span class="position">Lecture 2</span>
+						<p class="mt-4">In the second lecture, sir told us how important it is to stay confident during an interview. 
+							He said we should believe in ourselves and our abilities. 
+							He also advised us to think of the company we're applying to as if it's our own, showing care and responsibility. 
+							This way, we can impress the interviewers and show them we're the right fit for the job. Confidence and a positive attitude can help us succeed! 
+						</p>
+						<br>
+						<span class="position">Lecture 3</span>
+						<p class="mt-4">It is crucial to maintain honesty during interviews, as validation checks are conducted to verify claims made by candidates. 
+							Any false information can backfire and harm credibility.
+							Apart from technical expertise, strong communication, adaptability, and interpersonal skills play a significant role in career growth and professional success.
+							He also highlighted the importance of smart bluffing over reckless bluffing. 
+							While minor exaggerations can sometimes help in presenting oneself confidently, outright falsehoods in resumes or interviews can be easily caught and damage one's reputation.	
+
+					</div>
+
+				</div>
+			</div> 
+				<br><br>
+
+        <!-- <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/PigeonT4" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/PigeonT4">Seixer Therory</a></h3>
+                <p>Introduce yourself with your name, place, and education (in reverse order), followed by your recent work, career objective, and hobbies to increase your chances of securing the job.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/PigeonT4" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/PigeonT4">Five Ring Theory</a></h3>
+                <p> Introduction should include name, place, education, family background (showcasing interpersonal skills), and career goals (both short-term and long-term) to create a strong personal and professional impression.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/PigeonT4" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/PigeonT4">Power BI Sales dashboard Project for Beginners</a></h3>
+                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+	<br>
+		<!-- added justify-content-center to center align the last two My Work -->
+
+		<div class="resume-wrap ftco-animate" >
+			<span class="date" >Introduction Videos</span>
+			<br>
+			
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate" style="margin-right: 200px;">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1PQl-6pLP_Vx1EzEXog5Op13mGFhEPQaf/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url(https://i.ytimg.com/vi/wbymzX9XYRw/maxresdefault.jpg);">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1PQl-6pLP_Vx1EzEXog5Op13mGFhEPQaf/view?usp=drive_link">Sixer Theory</a></h3>
+				  <p>Introduce yourself with your name, place, and education (in reverse order), followed by your recent work, career objective, and hobbies to increase your chances of securing the job.</p>
+				</div>
+			  </div>
+			</div>
+			<br>
+			<div class="col-md-4 d-flex ftco-animate" >
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url(https://www.yuditrafarmana.id/wp-content/uploads/2020/11/Self-Introduction.jpg);">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Five Ring Theory</a></h3>
+				  <p>Introduction should include name, place, education, family background (showcasing interpersonal skills), and career goals (both short-term and long-term) to create a strong personal and professional impression.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+	</div>
+    </section>
+
+	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>My Work</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2> Projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> Passionate about leveraging AI &amp;  ML to tackle challenges and reveal hidden patterns in data. </h4>
+						<br>
+						<p><a href="https://github.com/PigeonT4" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Clement Town, Dehradun, Uttarakhand, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 7451045877</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">karan2609n@gmail.com</a></p>
+	          </div>
+          </div>
+           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resume</a></p>
+	          </div>
+          </div> 
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/mqksxCcFwPSW5d3u9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					 
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/karan-ray/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://github.com/PigeonT4"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://x.com/karan_ray12359?s=09"><span class="icon-twitter"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/karan.7k?igsh=anp5aXp6bG43NGpn"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
